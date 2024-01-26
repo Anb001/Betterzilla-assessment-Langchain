@@ -9,7 +9,13 @@ import streamlit as st
 from langchain.llms import OpenAI
 
 import os
-from constants import openai_key
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+openai_key = os.environ.get("api_key")
+
 
 os.environ['OPENAI_API_KEY'] = openai_key
 
