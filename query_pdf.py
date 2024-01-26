@@ -10,14 +10,7 @@ from langchain.llms import OpenAI
 
 import os
 
-from dotenv import load_dotenv
-
-load_dotenv()
-
-openai_key = os.environ.get("api_key")
-
-
-os.environ['OPENAI_API_KEY'] = openai_key
+openai_key = os.environ["OPENAI_API_KEY"]
 
 pdfreader = PdfReader('data.pdf')
 
