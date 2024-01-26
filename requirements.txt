@@ -4,3 +4,4 @@ pypdf2
 streamlit
 faiss-cpu
 tiktoken
+python_dotenv
